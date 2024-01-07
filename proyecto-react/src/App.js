@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Hero from './Hero';
+import logo from './img/woolmarkimagelogo-1024x576.png'; // Reemplaza con la ruta correcta de tu logotipo
 
-function App() {
+const HomePage = () => {
+  const heroImages = [
+    'https://wallpapercave.com/wp/wp6501320.jpg',
+    'https://wallpapercave.com/wp/wp2088569.jpg',
+    'https://wallpapercave.com/wp/wp7563482.jpg',
+    // ... más imágenes
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Hero
+        title="Bienvenido a Mi Sitio Web"
+        subtitle="Explora nuestro contenido increíble"
+        images={heroImages}
+        buttonText="Siguiente Imagen"
+        logo={logo}
+      />
+      {/* Otros componentes de tu página */}
     </div>
   );
-}
+};
 
-export default App;
+export default HomePage;

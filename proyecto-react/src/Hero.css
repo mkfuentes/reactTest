@@ -1,0 +1,54 @@
+.hero-container {
+  height: 400px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.hero-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.hero-menu a {
+  margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero-logo {
+  position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+
+.hero-content {
+  position: relative;
+    z-index: 2;
+    padding-top: 60px;
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+.hero-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
