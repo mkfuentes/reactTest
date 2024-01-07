@@ -18,7 +18,7 @@ const Hero = ({ title, subtitle, images, buttonText, logo }) => {
         <a href="#contact">Contacto</a>
       </div>
       <div className="hero-logo">
-        <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo"/>
       </div>
       <div className="hero-container" style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
         <div className="hero-content">
